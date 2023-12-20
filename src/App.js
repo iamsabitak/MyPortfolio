@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./index.css";
-
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
