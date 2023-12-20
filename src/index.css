@@ -1,13 +1,412 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Gill Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 100;
+  background-color: #1f1f1f;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #0ed8f3;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 3.5rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #0ed8f3;
+}
+.home {
+  display: flex;
+  align-items: center;
+  padding: 15rem 9%;
+}
+
+.home-content {
+  max-width: 60rem;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.home-content .text-animate h3 {
+  font-size: 3.3rem;
+  font-weight: 650;
+  color: #1f1f1f;
+  -webkit-text-stroke: 1.3px #0ed8f3;
+}
+
+.home-content p {
+  font-size: 2rem;
+  margin: 2rem 0 4rem;
+  margin-bottom: 4rem;
+}
+.home-content {
+  max-width: 70rem;
+  color: white;
+  margin-bottom: 4rem; 
+}
+.portfolio-img {
+  width: 60%;
+  margin-left: 7rem;
+}
+
+.portfolio-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn-box {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.btn-box .btn {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  color: white;
+  border: 2px solid #0ed8f3;
+}
+
+.btn-box .btn:hover {
+  background-color: #0ed8f3;
+  color: #1f1f1f;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 9%;
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+}
+.about h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #0ed8f3;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personal-info {
+  text-align: center;
+}
+.personal-info p {
+  font-size: 1.8rem;
+}
+.personal-info h3 {
+  font-size: 1.8rem;
+}
+.personal-info h3,
+.personal-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.professional-info {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.professional-info h2,
+.professional-info p {
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+}
+.personal-info h3,
+.personal-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.professional-info h2 {
+  font-size: 3.2rem;
+  font-size: 3.2rem;
+}
+
+.professional-info p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.projects {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 6rem 9%;
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-info {
+  padding: 2rem;
+}
+
+.project h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.not-found p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Contact Component */
+.contact {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.contact h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+.contact a:hover {
+  color: #0ed8f3;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #0ed8f3;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-icons a i {
+  font-size: 24px;
+  color: white;
+}
+
+.contact-icons a:hover {
+  background: #1f1f1f;
+}
+/* Contact Form Styles */
+.contact form {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #0ed8f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #1f1f1f;
+}
+/* Contact Form Styles */
+.contact form {
+  display: grid;
+  grid-gap: 1.5rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 2px solid #0ed8f3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0ed8f3;
 }
