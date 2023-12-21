@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./index.css";
-import Header from "./Header";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NotFound from "./NotFound";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "../index.css";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 function Header() {
