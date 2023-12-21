@@ -1,7 +1,9 @@
 import React from "react";
 import "../index.css";
-import Navbar from "./Navbar";
+
 import { Link } from "react-router-dom";
+import Navbar from "../header/Navbar";
+
 function Header() {
   return (
     <header className="header">
