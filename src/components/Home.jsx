@@ -18,7 +18,7 @@ function Home() {
             make websites that are super fun to use! I'm excited to learn and
             grow in this field. Let's team up and make the internet a cooler
             place together. If you're into creating awesome online stuff, let's
-            chat! 🚀✨
+            chat! 
           </p>
           <div className="btn-box">
             <a
