@@ -86,14 +86,11 @@ body {
   color: white;
   margin-bottom: 4rem;
 }
-.portfolio-img {
-  width: 60%;
-  margin-left: 7rem;
-}
 
 .portfolio-img img {
-  width: 100%;
+  width: 120%;
   border-radius: 8px;
+  margin-left: 4rem;
 }
 
 .btn-box {
@@ -408,4 +405,124 @@ body {
 
 .contact button:hover {
   background-color: #0ed8f3;
+}
+
+@media only screen and ((min-width: 300px )and (max-width: 900px)) {
+  .header {
+    justify-content: space-between;
+    text-align: center;
+  }
+  .logo {
+    font-size: 1.7rem;
+    margin-left: 4px;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+    font-weight: 400px;
+    margin-left: 1rem;
+  }
+  .home {
+    margin-top: -40px;
+  }
+  .home-content .text-animate h3 {
+    font-size: 2rem;
+    font-weight: 450;
+  }
+  .home-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+  .home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+  }
+  .portfolio-img {
+    width: 100%;
+    border-radius: 1px;
+    margin-right: 7rem;
+  }
+  .btn-box .btn {
+    padding: 1rem 1rem;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 2px solid #0ed8f3;
+  }
+  .about {
+    gap: 2rem;
+    padding: 6rem 9%;
+  }
+  .about h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .profile-details {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+  .personal-info p {
+    font-size: 1.2rem;
+  }
+  .personal-info h3 {
+    font-size: 1.6rem;
+  }
+  .professional-info h2,
+  .professional-info p {
+    font-size: 1.8rem;
+  }
+  .professional-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .professional-info p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .projects {
+    padding: 6rem 3%;
+  }
+  .projects h2 {
+    font-size: 3rem;
+  }
+  .project h3 {
+    font-size: 2rem;
+  }
+  .not-found {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .not-found h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
+
+  .not-found p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  .contact {
+    margin: 10px;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+
+  .contact p {
+    font-size: 1.6rem;
+  }
+
+  .contact-icons a i {
+    font-size: 2rem;
+  }
+  .contact input,
+  .contact textarea {
+    font-size: 1.6rem;
+  }
 }
