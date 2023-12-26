@@ -38,6 +38,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
@@ -240,7 +241,9 @@ body {
 .project-info {
   padding: 2rem;
 }
-
+.project-info a{
+  text-decoration: none;
+}
 .project h3 {
   font-size: 2.4rem;
   color: white;
@@ -407,6 +410,11 @@ body {
   background-color: #0ed8f3;
 }
 
+.toggle-btn,
+.dropdown-btn {
+  display: none; /* Hide toggle and dropdown on larger screens */
+}
+
 @media only screen and ((min-width: 300px )and (max-width: 900px)) {
   .header {
     justify-content: space-between;
@@ -416,11 +424,48 @@ body {
     font-size: 1.7rem;
     margin-left: 4px;
   }
-  .navbar a {
+  /* .navbar a {
     font-size: 1.6rem;
     font-weight: 400px;
     margin-left: 1rem;
+  } */
+  .navbar {
+    display: none;
   }
+
+  .toggle-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .dropdown-btn {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f1f1f;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+  .dropdown-btn.active {
+    display: block;
+  }
+  .dropdown-btn a {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .dropdown-btn a:hover {
+    background-color: #0ed8f3;
+  }
+
   .home {
     margin-top: -40px;
   }
@@ -484,7 +529,8 @@ body {
     line-height: 1.6;
   }
   .projects {
-    padding: 6rem 3%;
+    padding: 6rem 2%;
+    margin: auto;
   }
   .projects h2 {
     font-size: 3rem;
