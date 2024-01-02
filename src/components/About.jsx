@@ -11,7 +11,7 @@ function About() {
     <section className="about" id="about">
       <h2>About Me</h2>
       <ProfileDetails  gender={gender} age={age} name={name} />
-      <ProfessionalInfo/>
+      <ProfessionalInfo gender={gender} age={age} name={name}/>
     </section>
   );
 }
