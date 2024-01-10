@@ -7,6 +7,9 @@ function Navbar() {
   const toggleDropdown = () => {
     setIsActive(!isActive);
   };
+  const hideDropdown = () => {
+    setIsActive(false);
+  };
   return (
     <>
       <nav className="navbar" id="navbar">
@@ -35,10 +38,10 @@ function Navbar() {
       </div>
       <div className={`dropdown-btn ${isActive ? "active" : ""}`}>
         {/* Dropdown Links */}
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" onClick={hideDropdown}>Home</Link>
+        <Link to="/about" onClick={hideDropdown}>About</Link>
+        <Link to="/projects" onClick={hideDropdown}>Projects</Link>
+        <Link to="/contact" onClick={hideDropdown}>Contact</Link>
       </div>
     </>
   );
