@@ -233,15 +233,11 @@ body {
 
 .project img {
   width: 100%;
-  height: 37rem;
+  height: 25rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.projects-description {
-  margin-bottom: 3rem; 
-  font-size: 1.9rem;
-  text-align: center;
-}
+
 .project-info {
   padding: 2rem;
 }
@@ -419,7 +415,11 @@ body {
   display: none; /* Hide toggle and dropdown on larger screens */
 }
 
-
+.projects-description {
+  margin-bottom: 3rem; 
+  font-size: 1.9rem;
+  text-align: center;
+}
 
 @media only screen and ((min-width: 300px )and (max-width: 900px)) {
   .header {
