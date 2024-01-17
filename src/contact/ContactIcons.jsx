@@ -12,7 +12,7 @@ function ContactIcons() {
           <a href="https://twitter.com/sabita_khadka01">
             <i className="bx bxl-twitter"></i>
           </a>
-          <a href="https://github.com/account">
+          <a href="https://github.com/iamsabitak">
             <i className="bx bxl-github"></i>
           </a>
         </div>
